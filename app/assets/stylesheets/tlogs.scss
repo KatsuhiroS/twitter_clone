@@ -1,0 +1,195 @@
+// Place all the styles related to the tlogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  background-color: #2c3e50;
+  height: 54px;
+}
+
+header ul {
+  margin: 0 auto;
+  list-style: none;
+}
+
+header ul a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+header li {
+  float: left;
+  width: auto;
+}
+
+header ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-header {
+  padding-bottom: 15%;
+  width: 100%;
+  background-size: cover;
+  background-image: image-url("header.jpg");
+  background-attachment: fixed;
+}
+
+.main-header img {
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  padding-top: 15%;
+}
+
+.about {
+  background-color: white;
+  color: #333;
+  padding: 80px;
+  margin-bottom: 130px;
+}
+
+.tlog_table {
+  margin: 0 auto;
+  width: 50%;
+  border-collapse:separate;
+  border-spacing:15px;
+}
+
+.td_tlog_content {
+  /* text-align: left; */
+  width: 70%;
+  height: 60px;
+  background-color: #E4E4E4;
+}
+
+.edit_button {
+  display: inline-block;
+  width:90px;
+  height: 60px;
+  background-color: skyblue;
+  border-radius: 10px;
+  line-height: 60px;
+}
+
+.edit_button a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.delete_button {
+  display: inline-block;
+  width:90px;
+  height: 60px;
+  margin-left: 10px;
+  background-color: pink;
+  border-radius: 10px;
+  line-height: 60px;
+}
+
+.delete_button a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.new_button {
+  margin: 0 auto;
+  background-color: lightgreen;
+  height: 60px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.new_button a {
+  line-height: 60px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.index_button {
+  margin: 0 auto;
+  background-color: #7f7f7f;
+  height: 30px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.index_button a {
+  color: #fff;
+  line-height: 30px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.submit_button {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.submit_button input {
+  border-radius: 10px;
+  background-color: blue;
+  width: 50px;
+  height: 30px;
+  color: #FFF;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.tweet_button input{
+  border-radius: 10px;
+  background-color: blue;
+  width: 90px;
+  height: 30px;
+  color: #FFF;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.back_button input{
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: #7f7f7f;
+  width: 70px;
+  height: 30px;
+  color: #FFF;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.error_msg {
+  list-style: none;
+}
+
+footer {
+  width: 100%;
+  background-color:#2c3e50;
+  padding: 20px 0 10px 0;
+  color: white;
+  margin: auto;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}

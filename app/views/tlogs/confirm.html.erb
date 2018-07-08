@@ -1,0 +1,16 @@
+<h2>以下の内容でつぶやく</h2>
+
+<%= form_with(model: @tlog, url: tlogs_path, local: true) do |form| %>
+  <%= form.hidden_field :content %>
+  <p>本文:<%= @tlog.content %></p>
+  <div class = "tweet_button">
+    <%= form.submit  "つぶやく" %>
+  </div>
+<% end %>
+
+<%= form_with(model: @tlog, url: new_tlog_path, local: true, method: 'get') do |form| %>
+  <%= form.hidden_field :content %>
+  <div class="back_button">
+    <%= form.submit "もどる", name: 'back'%>
+  </div>
+<% end %>

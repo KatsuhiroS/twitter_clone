@@ -1,0 +1,23 @@
+<%= form_with(model: @tlog, local: true, url: choose_new_or_edit) do |form| %>
+  <% if @tlog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @tlog.errors.count %>件のエラーがあります。</h2>
+      <ul>
+        <% @tlog.errors.full_messages.each do |msg| %>
+          <li class = "error_msg"><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="tlog_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <div class = "submit_button">
+    <%= form.submit "送信" %>
+  </div>
+<% end %>
+<div class="index_button">
+  <%= link_to "一覧", tlogs_path %>
+</div>

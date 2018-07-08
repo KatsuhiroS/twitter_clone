@@ -1,0 +1,19 @@
+<h2>つぶやき一覧</h2>
+
+<table class="tlog_table">
+  <tr>
+    <th>Content</th>
+  </tr>
+
+  <% @tlogs.each do |tlog| %>
+    <tr>
+      <td class = "td_tlog_content"><%= tlog.content %></td>
+      <td class = "edit_button"><%= link_to '編集', edit_tlog_path(tlog.id) %></td>
+      <td class = "delete_button"><%= link_to '削除', tlog_path(tlog.id), method: :delete, data: { confirm: '本当に削除していいですか？' }  %></td>
+    </tr>
+  <% end %>
+</table>
+
+<div class = "new_button">
+  <%= link_to '新規', new_tlog_path %>
+</div>
